@@ -1,0 +1,109 @@
+{
+  "javaArraylistObject": {
+    "scope": "java",
+    "prefix": "java arraylist object",
+    "body": [
+      "import java.util.ArrayList;",
+      "ArrayList<Penumpang> daftarPenumpang = new ArrayList<>();",
+      "daftarPenerbangan.add(",
+      "new Penerbangan(",
+      "GA101",
+      "CGK, JAKARTA",
+      "DPS, Bali",
+      "06:30",
+      "08:15",
+      "1200000",
+      ")",
+      ");"
+    ],
+    "description": "Log output to console"
+  },
+  "javaMainFunction": {
+    "scope": "java",
+    "prefix": "java main function",
+    "body": ["public static void main(String[] args) {}"],
+    "description": "Log output to console"
+  },
+  "javaScanner": {
+    "scope": "java",
+    "prefix": "java scanner",
+    "body": [
+      "import java.util.Scanner;",
+      "Scanner scanner = new Scanner(System.in);",
+      "int pilihanMenu = scanner.nextInt();",
+      "scanner.nextLine();",
+      "System.out.print('Masukkan NIK: ');",
+      "String NIK = scanner.nextLine();"
+    ],
+    "description": "Log output to console"
+  },
+  "javaSwitchCase": {
+    "scope": "java",
+    "prefix": "java switch case",
+    "body": ["switch (pilihanMenu) {", "case 1:", "default:", "}"],
+    "description": "Log output to console"
+  },
+  "javaForLoop": {
+    "scope": "java",
+    "prefix": "java for loop",
+    "body": [
+      "index = 1;",
+      "for (Penerbangan penerbangan : daftarPenerbangan) {",
+      "System.out.println();",
+      "System.out.println(index);",
+      "penerbangan.tampilDaftarPenerbangan();",
+      "index++;",
+      "}"
+    ],
+    "description": "Log output to console"
+  },
+  "javaContructor": {
+    "scope": "java",
+    "prefix": "java constructor",
+    "body": ["public Penumpang(String NIK) {", "this.NIK = NIK;", "}"],
+    "description": "Log output to console"
+  },
+  "javaGetter": {
+    "scope": "java",
+    "prefix": "java getter",
+    "body": ["public String getNIK() { return NIK; }"],
+    "description": "Log output to console"
+  },
+  "javaPrintObject": {
+    "scope": "java",
+    "prefix": "java print object",
+    "body": [
+      "public void tampilDaftarPenerbangan() {",
+      "System.out.println('Nomor Penerbangan       : ' + nomorPenerbangan);",
+      "}"
+    ],
+    "description": "Log output to console"
+  },
+  "javaSearchArrayList": {
+    "scope": "java",
+    "prefix": "java search array list",
+    "body": [
+      "index = 1;",
+      "for (Penumpang penumpang : daftarPenumpang) {",
+      "System.out.println(index);",
+      "String nomorPenerbangan = penumpang.getNomorPenerbangan();",
+      "Penerbangan matchingPenerbangan = null;",
+
+      "for (Penerbangan penerbangan : daftarPenerbangan) {",
+      "if (penerbangan.getNomorPenerbangan().equals(nomorPenerbangan)) {",
+      "matchingPenerbangan = penerbangan;",
+      "break;",
+      "}",
+      "}",
+
+      "System.out.println(NIK                      + penumpang.getNIK());",
+
+      "if (matchingPenerbangan != null) {",
+      "matchingPenerbangan.tampilDaftarPenerbangan();",
+      "}",
+      "index++;",
+      "}"
+    ],
+    "description": "Log output to console"
+  }
+}
