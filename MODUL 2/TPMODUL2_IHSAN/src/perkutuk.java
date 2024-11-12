@@ -5,11 +5,11 @@ public class perkutuk extends hewan {
     super(nama, umur);
     this.warnaBulu = warnaBulu;
   }
-
+  @Override
   public void suara() {
     System.out.println(nama + " berkicau 'cicicuit'");
   }
-
+  @Override
   public void infoHewan() {
     super.infoHewan();
     System.out.println("Warna Bulu: " + warnaBulu);
