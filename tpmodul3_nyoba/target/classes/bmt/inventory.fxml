@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bmt.InventoryController">
+    <TableView fx:id="albumTable" BorderPane.center>
+        <columns>
+            <TableColumn text="Album Name" fx:id="nameColumn" />
+            <TableColumn text="Artist" fx:id="artistColumn" />
+            <TableColumn text="Total" fx:id="totalColumn" />
+            <TableColumn text="Available" fx:id="availableColumn" />
+        </columns>
+    </TableView>
+    <VBox spacing="10" BorderPane.bottom>
+        <TextField fx:id="nameField" promptText="Album Name" />
+        <TextField fx:id="artistField" promptText="Artist" />
+        <TextField fx:id="totalField" promptText="Total" />
+        <TextField fx:id="availableField" promptText="Available" />
+        <HBox spacing="10">
+            <Button text="Add" onAction="#handleAdd" />
+            <Button text="Update" onAction="#handleUpdate" />
+            <Button text="Delete" onAction="#handleDelete" />
+            <Button text="Rent" onAction="#handleRent" />
+        </HBox>
+    </VBox>
+</BorderPane>
